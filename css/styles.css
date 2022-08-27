@@ -32,6 +32,9 @@ body {
 }
 
 .section {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -65,7 +68,10 @@ p {
 /* header */
 
 .header {
+  max-width: 1600px;
   min-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
   font-weight: 500;
   border-bottom: 1px solid var(--header-border-bottom);
 }
@@ -155,7 +161,14 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
   background-color: var(--secondary-background-color);
+  background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
   text-align: center;
 }
 
@@ -218,6 +231,42 @@ p {
 .features-list {
   display: flex;
   gap: 30px;
+}
+
+.features-list .item::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  background-color: var(--tertiary-background-color);
+}
+
+.icon-antenna::before {
+  content: "";
+  background-image: url(../images/svg/antenna.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-clock::before {
+  content: "";
+  background-image: url(../images/svg/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-diagram::before {
+  content: "";
+  background-image: url(../images/svg/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-astronaut::before {
+  content: "";
+  background-image: url(../images/svg/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features .item {
@@ -309,6 +358,9 @@ p {
 /* footer */
 
 .footer {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--secondary-background-color);
@@ -317,7 +369,7 @@ p {
 .footer .logo {
   display: block;
   margin-top: 0px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   padding-top: 0px;
   padding-bottom: 0px;
   color: var(--tertiary-text-color);
