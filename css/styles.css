@@ -14,6 +14,7 @@
   --cards-border-color: #eeeeee;
   --header-border-bottom: #ececec;
   --active-button: #188ce8;
+  --icon-border: #AFB1B8;
 }
 
 /* global */
@@ -32,7 +33,6 @@ body {
 }
 
 .section {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 94px;
@@ -68,8 +68,6 @@ p {
 /* header */
 
 .header {
-  max-width: 1600px;
-  min-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   font-weight: 500;
@@ -143,6 +141,12 @@ p {
   margin-right: 50px;
 }
 
+.contacts-icon {
+  fill: currentColor;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 .contacts .link {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -161,7 +165,6 @@ p {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   height: 600px;
@@ -235,6 +238,12 @@ p {
 
 .features .item {
   width: calc((100% - 90px) / 4);
+}
+
+.features-thumb {
+  background-color: var(--tertiary-background-color);
+  padding: 25px 100px;
+  margin-bottom: 30px;
 }
 
 .features .title {
@@ -319,10 +328,45 @@ p {
   color: var(--secondary-text-color);
 }
 
+/* clients */
+
+.clients .title {
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: calc(42/36);
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.clients .list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients .link {
+  display: inline-block;
+  padding: 16px 32px;
+  color: var(--icon-border);
+  border: 1px solid var(--icon-border);
+  border-radius: 4px;
+}
+
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+
+.client-logo {
+  fill: currentColor;
+}
+
+
 /* footer */
 
 .footer {
-  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 60px;
