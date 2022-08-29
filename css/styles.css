@@ -395,6 +395,7 @@ p {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer .logo {
@@ -435,12 +436,11 @@ p {
 /* follow */
 
 .follow {
-  margin-top: 12px;
   margin-left: 70px;
 }
 
 .follow .title {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
